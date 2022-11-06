@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "de una tarjeta gráfica para PC" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,9 +55,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <span className="tagline">Tarjetas Gráficas PC</span>
+                <h1>{`Definición y análisis `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
+                  <p>Una tarjeta gráfica es el componente de hardware más importante que produce la imagen en movimiento que se ve en la pantalla de un monitor.</p>
+                  <p>Es la responsable de mostrar las matices y la calidad de la imagen con una cierta cantidad de fotogramas por segundo (FPS) según el modelo.</p>
+                  <p>Mejor sea el rendimiento de la tarjeta gráfica, mayor cantidad de píxeles podrá dibujar en pantalla y por consiguiente será más suave y nítida la imagen en movimiento, por lo tanto, esto depende de un buen número de factores internos que integra, tales como la resolución y el tamaño en pulgadas del monitor.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
